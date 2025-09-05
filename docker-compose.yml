@@ -1,7 +1,7 @@
 ---
 services:
   radarr:
-    image: braingremlin/radarr-py:latest
+    image: braingremlin/docker-radarr:latest
     container_name: radarr
     env_file:
       - stack.env
@@ -18,4 +18,4 @@ services:
 
 networks:
   media-bridge:
-    external: true    
+    external: true
